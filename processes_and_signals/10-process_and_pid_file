@@ -13,7 +13,7 @@ trap endScript SIGQUIT SIGNTERM
 
 function endScript() {
 	rm /var/run/myscript.pid
-	exit
+	exit 1
 }
 
 while true; do
